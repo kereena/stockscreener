@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block extrahead %}{{ form.media }}{% endblock %}
+
+{% block content %}
+
+<form method="post" action="/search/result/" onsubmit="return search('results', this); ">
+
+  <div class="rightdrop">
+    {{ form.sector }}
+    {{ form.exchange }}
+  </div>
+	
+  <div class="criteria">
+	
+    Please select which criteria you want to screen the stocks for.
+    You can select as many criteria as you want.
+			
+    <table width="100%" id='id_criterias'>
+      <tr class="head">
+	<th>&nbsp;</th>
+	<th>Criteria</th>
+	<th>Min</th>
+	<th>Max</th>
+	<th>Distribution</th>
+      </tr>
+    </table>
+    
+    <br />
+    {{ form.add_criteria }}
+  </div>
+  
+  <div class="rightdrop">
+    {{ form.show_result }}
+  </div>
+  
+  <div style="float:left;">
+    <input type="submit" value="Search now" />
+  </div>
+  
+</form>
+
+<div style="clear:both;" />
+
+<div class="title">
+  Results
+</div>
+
+<div class="result" id="results">
+</div>
+
+{% endblock %}

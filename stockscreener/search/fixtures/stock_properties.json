@@ -1,0 +1,6 @@
+[{"pk": 1, "model": "search.stockproperty", "fields": {"url":  "http://www.reuters.com/finance/stocks/overview?symbol=SYMBOL", "xml_path": "(.//td[@class='data'])[4]", 
+"convert_expression": "x", "name": "P/E Ratio"}}, {"pk": 2, "model": "search.stockproperty", "fields": {"url":
+ "http://www.reuters.com/finance/stocks/overview?symbol=SYMBOL", "xml_path": "(.//div[@class='row'])[9]/span", 
+"convert_expression": "SSI(x)", "name": "Shares out"}}, {"pk": 3, "model": "search.stockproperty", "fields": {"url"
+: "http://www.reuters.com/finance/stocks/overview?symbol=SYMBOL", "xml_path": "(.//div[@class='row'])[11]/span", 
+"convert_expression": "x.split(' ')[0]", "name": "Div. and yield"}}]

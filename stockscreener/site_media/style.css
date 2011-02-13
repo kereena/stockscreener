@@ -1,0 +1,38 @@
+
+th {
+	text-align: left;
+}
+tr.head th {
+	border-bottom: 1px #000 solid;
+}
+.criteria {
+	padding-right: 300px;
+}
+.rightdrop {
+	float: right;
+	margin: 10px;
+}
+.search {
+	margin: 10px;
+}
+.topmenu {
+	margin: 10px;
+}
+.topmenu a {
+	margin-right: 20px;
+}
+.title {
+	background: #ccf;
+	padding-left: 10px;
+	font-weight: bold;
+	border-bottom: 2px #99f solid;
+}
+.criteria {
+	margin: 10px;
+}
+tr.row2 {
+	background: #eef;
+}
+.result tr:hover {
+	background: #ccc;
+}

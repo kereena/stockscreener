@@ -1,0 +1,19 @@
+<tr>
+  <td>
+    <a href='#' onclick='removeCriteria(this); return false;'>
+      <img src='/site_media/delete.png' style="border:0;" />
+    </a>
+  </td>
+  <td>
+    {{ criteria.name }}
+  </td>
+  <td>
+    <input type="text" name="min[{{ criteria.id }}]" size="8" value="{{ min_value }}" />
+  </td>
+  <td>
+    <input type="text" name="max[{{ criteria.id }}]" size="8" value="{{ max_value }}" />
+  </td>
+  <td>
+    <img src="/distrgraph/{{ criteria.id }}/" title="Distribution" alt="Distribution"/>
+  </td>
+</tr>
