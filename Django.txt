@@ -1,0 +1,11 @@
+
+1. Django is a new generation of Web frameworks. By using Django, you can build and maintain high-quality Web applications      with minimal fuss.
+
+2. Django is simply a collection of libraries written in the Python programming language. To develop a site using Django, you    write Python code that uses these libraries.
+
+3. Django is written in 100% pure Python code, so you’ll need to install Python on your system. Django requires Python 2.3 or    higher.
+
+4. Django requires MySQL 4.0 or above; the 3.x versions don’t support nested subqueries and some other fairly standard SQL    statements. You’ll also need the MySQLdb package from http://www.djangoproject.com/r/python-mysql/.
+
+5. Django is designed to encourage loose coupling and strict separation between pieces of an application. If you follow this philosophy, it’s easy to make changes to one particular piece of the application without affecting the other pieces.
+

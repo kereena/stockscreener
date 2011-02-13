@@ -1,0 +1,255 @@
+<html>
+	<head>
+		<title>Search Form</title>
+		<script type="text/javascript" src="prototype-1.6.0.3.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<div class="topmenu">
+			<a href="#">Screener</a>
+			<a href="#">Frontpage</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Menu4</a>
+			<a href="#">Menu5</a>
+			<a href="#">Menu6</a>
+		</div>
+
+		<div class="search">
+			<div style="float:left;">
+				Freyr logo
+			</div>
+			<div style="float:left;">
+				<form method="post">
+					<input type="text" name="q" /> <input type="submit" value="Search" />
+				</form>
+			</div>
+			<div style="clear:both;"/>
+		</div>
+
+		<div class="title">
+			Stock screener
+		</div>
+		
+		<div class="rightdrop">
+			<select name="mydropdown">
+				<option value="">Select industry</option>
+				<option value="ind1">Metals</option>
+				<option value="ind2">Oil and Gas</option>
+				<option value="ind3">Gems</option>
+			</select>
+			<select name="mydropdown">
+				<option value="">Select stock exchange</option>
+				<option value="ex1">Copenhagen Stock Exchange</option>
+				<option value="ex2">Stockholm Stock Exchange</option>
+				<option value="ex3">Helsinki Stock Exchange</option>
+			</select>
+		</div>
+		
+		<div class="criteria">
+		
+			Please select which criteria you want to screen the stocks for.
+			You can select as many criteria as you want.
+			
+			<table width="100%">
+				<tr class="head">
+					<th>&nbsp;</th>
+					<th>Criteria</th>
+					<th>Min</th>
+					<th>Max</th>
+					<th>Distribution</th>
+				</tr>
+				<tr class="row1">
+					<td>
+						<a href="search.html"><img src="delete.png" border="0" alt="Remove" title="Remove criteria"/></a>
+					</td>
+					<td>
+						<div align="left">
+							P/E Ratio
+						</div>
+					</td>
+					<td>
+						<input type="text" name="min" value="10.4" size="5"/>
+					</td>
+					<td>
+						<input type="text" name="min" value="15.2" size="5"/>
+					</td>								
+					<td>
+						<img src="graph-error.png" />
+					</td>
+				</tr>
+				<tr class="row2">
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						<select name="mydropdown">
+							<option value="">Select to add criteria</option>
+							<option value="ex1">P/E Ratio</option>
+							<option value="ex2">Shares out</option>
+							<option value="ex3">Stock price</option>
+						</select>
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>								
+					<td>
+						&nbsp;
+					</td>								
+				</tr>
+			</table>
+		</div>
+			
+		<div class="rightdrop">
+			<select name="view">
+				<option value="criteria">Show only selected in result</option>
+				<option value="all">Show all in result</option>
+			</select>
+		</div>
+
+		<div style="float:left;">
+			<input type="submit" name="Search now" />
+		</div>
+			
+		<div style="clear:both;" />
+		
+		<div class="title">
+			Results
+		</div>
+		
+		<div class="results">
+		
+		<table>
+			<tr>
+				<th>Symbol</th>
+				<th>Company name</th>
+				<th>P/E Ratio</th>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+			<tr>
+				<td>TDC.CO</td>
+				<td>TDC A/S</td>
+				<td>1.2</td>
+			</tr>
+		
+		</table>
+		
+		</div>
+	</body>
+</html>

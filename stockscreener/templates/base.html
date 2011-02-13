@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>{% block htmltitle %}Stock Screener v1.0{% endblock %}</title>
+    <script type="text/javascript" src="/site_media/prototype-1.6.0.3.js"></script>
+    <script type="text/javascript" src="/site_media/stockscreener.js"></script>
+    <link rel="stylesheet" href="/site_media/style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="topmenu">
+      <a href="#">Screener</a>
+      <a href="#">Frontpage</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Menu4</a>
+      <a href="#">Menu5</a>
+      <a href="#">Menu6</a>
+    </div>
+    
+    <div class="search">
+      <div style="float:left;">
+	Freyr logo
+      </div>
+      <div style="float:left;">
+	<form method="post">
+	  <input type="text" name="q" /> <input type="submit" value="Search" />
+	</form>
+      </div>
+      <div style="clear:both;"/>
+    </div>
+    
+    <div class="title">
+      {% block title %}Stock screener{% endblock %}
+    </div>
+    
+    {% block content %}No content{% endblock %}
+  </body>
+</html>

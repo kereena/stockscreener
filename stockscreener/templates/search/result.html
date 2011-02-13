@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Company</th>
+    {% for header in headers %}
+    <th>{{ header.name }}</th>
+    {% endfor %}
+  </tr>
+  {% for result in results %}
+  <tr>
+    <td>{{ result.symbol.symbol }} <img src="/site_media/{{ result.symbol.exchange }}.png" /><br />
+      {{ result.symbol.name }}
+    </td>
+    {% for value in result.values %}
+    <td>{{ value }}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>

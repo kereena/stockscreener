@@ -1,0 +1,3 @@
+Iteration:
+
+1).Divide as some tasks to user story which you selected in iteration.
